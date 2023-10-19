@@ -1,0 +1,35 @@
+{
+    "name": "larapackage/imageconverter",
+    "description": "this package for all image convert into different file",
+    "type": "metapackage",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Larapackage\\Imageconverter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "usman shoukat",
+            "email": "121452897+Usmanshoukat001@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1",
+        "intervention/image": "^2.7",
+        "orbitale/imagemagick-php": "^3.3",
+        "pbmedia/laravel-ffmpeg": "^8.3"
+    },
+    "minimum-stability": "dev",
+"prefer-stable": true,
+    "extra": {
+        "laravel": {
+          "providers": [
+            "\\Larapackage\\Imageconverter\\Providers\\ConverterProvider"
+          ],
+          "aliases": {
+            "Imageconverter": "Larapackage\\Imageconverter\\Converter"
+          }
+        }
+      }
+}
