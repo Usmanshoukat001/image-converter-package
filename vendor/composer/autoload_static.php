@@ -46,6 +46,7 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
         'I' => 
         array (
             'Intervention\\Image\\' => 19,
+            'Imageconverterpackage\\Imageconverterpackage\\' => 44,
             'Illuminate\\Contracts\\' => 21,
         ),
         'G' => 
@@ -61,10 +62,6 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
         'E' => 
         array (
             'Evenement\\' => 10,
-        ),
-        'C' => 
-        array (
-            'Converterlaravelpackage\\imageconverterpackage\\' => 46,
         ),
         'A' => 
         array (
@@ -146,6 +143,10 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
         array (
             0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
         ),
+        'Imageconverterpackage\\Imageconverterpackage\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Illuminate\\Contracts\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/contracts',
@@ -169,10 +170,6 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
         'Evenement\\' => 
         array (
             0 => __DIR__ . '/..' . '/evenement/evenement/src',
-        ),
-        'Converterlaravelpackage\\imageconverterpackage\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'Alchemy\\BinaryDriver\\' => 
         array (

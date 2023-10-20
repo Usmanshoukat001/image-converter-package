@@ -3,7 +3,7 @@
         'name' => 'converterlaravelpackage/imageconverterpackage',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '414112495fa6bdeb011e169b6de0d84636f249c5',
+        'reference' => '5c7a6662e08ca35b0e4346209a6d66e17dd47b1b',
         'type' => 'metapackage',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'converterlaravelpackage/imageconverterpackage' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '414112495fa6bdeb011e169b6de0d84636f249c5',
+            'reference' => '5c7a6662e08ca35b0e4346209a6d66e17dd47b1b',
             'type' => 'metapackage',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

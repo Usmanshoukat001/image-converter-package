@@ -5,7 +5,7 @@
   "license": "MIT",
   "autoload": {
       "psr-4": {
-          "Converterlaravelpackage\\imageconverterpackage\\": "src/"
+          "Imageconverterpackage\\Imageconverterpackage\\": "src/"
       }
   },
   "authors": [
@@ -24,7 +24,7 @@
   "extra": {
       "laravel": {
         "providers": [
-          "\\Converterlaravelpackage\\imageconverterpackage\\src\\Providers\\ConverterProvider"
+          "imageconverterpackage\\src\\Providers\\ConverterProvider"
         ],
         "aliases": {
           "imageconverterpackage": "Converterlaravelpackage\\imageconverterpackage\\Converter"

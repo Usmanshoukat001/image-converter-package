@@ -24,12 +24,12 @@ return array(
     'Orbitale\\Component\\ImageMagick\\Tests\\' => array($vendorDir . '/orbitale/imagemagick-php/Tests'),
     'Orbitale\\Component\\ImageMagick\\' => array($vendorDir . '/orbitale/imagemagick-php/src'),
     'Intervention\\Image\\' => array($vendorDir . '/intervention/image/src/Intervention/Image'),
+    'Imageconverterpackage\\Imageconverterpackage\\' => array($baseDir . '/src'),
     'Illuminate\\Contracts\\' => array($vendorDir . '/illuminate/contracts'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'FFMpeg\\' => array($vendorDir . '/php-ffmpeg/php-ffmpeg/src/FFMpeg'),
     'Evenement\\' => array($vendorDir . '/evenement/evenement/src'),
-    'Converterlaravelpackage\\imageconverterpackage\\' => array($baseDir . '/src'),
     'Alchemy\\BinaryDriver\\' => array($vendorDir . '/php-ffmpeg/php-ffmpeg/src/Alchemy/BinaryDriver'),
 );
