@@ -1,11 +1,11 @@
 {
-    "name": "larapackage/imageconverter",
+    "name": "converterlaravelpackage/imageconverter",
     "description": "this package for all image convert into different file",
     "type": "metapackage",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Larapackage\\Imageconverter\\": "src/"
+            "Converterlaravelpackage\\Imageconverter\\": "src/"
         }
     },
     "authors": [
@@ -21,14 +21,14 @@
         "pbmedia/laravel-ffmpeg": "^8.3"
     },
     "minimum-stability": "dev",
-"prefer-stable": true,
+    "prefer-stable": true,
     "extra": {
         "laravel": {
           "providers": [
-            "\\Larapackage\\Imageconverter\\Providers\\ConverterProvider"
+            "\\Converterlaravelpackage\\Imageconverter\\Providers\\ConverterProvider"
           ],
           "aliases": {
-            "Imageconverter": "Larapackage\\Imageconverter\\Converter"
+            "Imageconverter": "Converterlaravelpackage\\Imageconverter\\Converter"
           }
         }
       }

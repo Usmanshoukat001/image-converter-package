@@ -20,7 +20,7 @@ use Symfony\Contracts\Cache\CacheInterface;
  */
 class NullAdapter implements AdapterInterface, CacheInterface
 {
-    private static \Closure $createCacheItem;
+    private static $createCacheItem;
 
     public function __construct()
     {

@@ -43,10 +43,6 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
             'Orbitale\\Component\\ImageMagick\\Tests\\' => 37,
             'Orbitale\\Component\\ImageMagick\\' => 31,
         ),
-        'L' => 
-        array (
-            'Larapackage\\Imageconverter\\' => 27,
-        ),
         'I' => 
         array (
             'Intervention\\Image\\' => 19,
@@ -65,6 +61,10 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
         'E' => 
         array (
             'Evenement\\' => 10,
+        ),
+        'C' => 
+        array (
+            'Converterlaravelpackage\\Imageconverter\\' => 39,
         ),
         'A' => 
         array (
@@ -115,8 +115,8 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -141,10 +141,6 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
         'Orbitale\\Component\\ImageMagick\\' => 
         array (
             0 => __DIR__ . '/..' . '/orbitale/imagemagick-php/src',
-        ),
-        'Larapackage\\Imageconverter\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'Intervention\\Image\\' => 
         array (
@@ -173,6 +169,10 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
         'Evenement\\' => 
         array (
             0 => __DIR__ . '/..' . '/evenement/evenement/src',
+        ),
+        'Converterlaravelpackage\\Imageconverter\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Alchemy\\BinaryDriver\\' => 
         array (

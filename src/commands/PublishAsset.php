@@ -1,6 +1,6 @@
 <?php
 
-namespace Larapackage\Imageconverter\commands;
+namespace Converterlaravelpackage\Imageconverter\commands;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Console\Command;

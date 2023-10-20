@@ -87,8 +87,7 @@ trait FilesystemCommonTrait
 
     private function write(string $file, string $data, int $expiresAt = null): bool
     {
-        $unlink = false;
-        set_error_handler(static fn ($type, $message, $file, $line) => throw new \ErrorException($message, 0, $type, $file, $line));
+        set_error_handler(__CLASS__.'::throwError');
         try {
             $tmp = $this->directory.$this->tmpSuffix ??= str_replace('/', '-', base64_encode(random_bytes(6)));
             try {
@@ -103,22 +102,14 @@ trait FilesystemCommonTrait
             }
             fwrite($h, $data);
             fclose($h);
-            $unlink = true;
 
             if (null !== $expiresAt) {
                 touch($tmp, $expiresAt ?: time() + 31556952); // 1 year in seconds
             }
 
-            $success = rename($tmp, $file);
-            $unlink = !$success;
-
-            return $success;
+            return rename($tmp, $file);
         } finally {
             restore_error_handler();
-
-            if ($unlink) {
-                @unlink($tmp);
-            }
         }
     }
 
@@ -167,14 +158,19 @@ trait FilesystemCommonTrait
         }
     }
 
+    /**
+     * @internal
+     */
+    public static function throwError(int $type, string $message, string $file, int $line): never
+    {
+        throw new \ErrorException($message, 0, $type, $file, $line);
+    }
+
     public function __sleep(): array
     {
         throw new \BadMethodCallException('Cannot serialize '.__CLASS__);
     }
 
-    /**
-     * @return void
-     */
     public function __wakeup()
     {
         throw new \BadMethodCallException('Cannot unserialize '.__CLASS__);

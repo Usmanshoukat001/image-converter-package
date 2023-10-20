@@ -223,37 +223,37 @@ trait RedisTrait
                         break;
                     }
 
-                    try {
-                        if (version_compare(phpversion('redis'), '6.0.0', '>=') && $isRedisExt) {
-                            $options = [
-                                'host' => $host,
-                                'port' => $port,
-                                'connectTimeout' => $params['timeout'],
-                                'persistent' => $params['persistent_id'],
-                                'retryInterval' => $params['retry_interval'],
-                                'readTimeout' => $params['read_timeout'],
-                            ];
+                    if (version_compare(phpversion('redis'), '6.0.0', '>=') && $isRedisExt) {
+                        $options = [
+                            'host' => $host,
+                            'port' => $port,
+                            'connectTimeout' => $params['timeout'],
+                            'persistent' => $params['persistent_id'],
+                            'retryInterval' => $params['retry_interval'],
+                            'readTimeout' => $params['read_timeout'],
+                        ];
 
-                            if ($passAuth) {
-                                $options['auth'] = $params['auth'];
-                            }
-
-                            $sentinel = new \RedisSentinel($options);
-                        } else {
-                            $extra = $passAuth ? [$params['auth']] : [];
-
-                            $sentinel = new $sentinelClass($host, $port, $params['timeout'], (string) $params['persistent_id'], $params['retry_interval'], $params['read_timeout'], ...$extra);
+                        if ($passAuth) {
+                            $options['auth'] = $params['auth'];
                         }
 
+                        $sentinel = new \RedisSentinel($options);
+                    } else {
+                        $extra = $passAuth ? [$params['auth']] : [];
+
+                        $sentinel = new $sentinelClass($host, $port, $params['timeout'], (string) $params['persistent_id'], $params['retry_interval'], $params['read_timeout'], ...$extra);
+                    }
+
+                    try {
                         if ($address = $sentinel->getMasterAddrByName($params['redis_sentinel'])) {
                             [$host, $port] = $address;
                         }
-                    } catch (\RedisException|\Relay\Exception $redisException) {
+                    } catch (\RedisException $e) {
                     }
                 } while (++$hostIndex < \count($hosts) && !$address);
 
                 if (isset($params['redis_sentinel']) && !$address) {
-                    throw new InvalidArgumentException(sprintf('Failed to retrieve master information from sentinel "%s".', $params['redis_sentinel']), previous: $redisException ?? null);
+                    throw new InvalidArgumentException(sprintf('Failed to retrieve master information from sentinel "%s".', $params['redis_sentinel']));
                 }
 
                 try {
