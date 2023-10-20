@@ -20,6 +20,8 @@
         "orbitale/imagemagick-php": "^3.3",
         "pbmedia/laravel-ffmpeg": "^8.3"
     },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "extra": {
         "laravel": {
           "providers": [
