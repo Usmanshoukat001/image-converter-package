@@ -1,7 +1,7 @@
 <?php
 
-namespace Converterlaravelpackage\Imageconverter\Providers;
-use Converterlaravelpackage\Imageconverter\commands\PublishAsset;
+namespace Converterlaravelpackage\imageconverterpackage\Providers;
+use Converterlaravelpackage\imageconverterpackage\commands\PublishAsset;
 
 use Illuminate\Support\ServiceProvider;
 

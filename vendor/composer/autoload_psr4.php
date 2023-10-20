@@ -30,6 +30,6 @@ return array(
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'FFMpeg\\' => array($vendorDir . '/php-ffmpeg/php-ffmpeg/src/FFMpeg'),
     'Evenement\\' => array($vendorDir . '/evenement/evenement/src'),
-    'Converterlaravelpackage\\Imageconverter\\' => array($baseDir . '/src'),
+    'Converterlaravelpackage\\imageconverterpackage\\' => array($baseDir . '/src'),
     'Alchemy\\BinaryDriver\\' => array($vendorDir . '/php-ffmpeg/php-ffmpeg/src/Alchemy/BinaryDriver'),
 );

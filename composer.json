@@ -1,11 +1,11 @@
 {
-  "name": "converterlaravelpackage/imageconverter",
+  "name": "converterlaravelpackage/imageconverterpackage",
   "description": "this package for all image convert into different file",
   "type": "metapackage",
   "license": "MIT",
   "autoload": {
       "psr-4": {
-          "Converterlaravelpackage\\Imageconverter\\": "src/"
+          "Converterlaravelpackage\\imageconverterpackage\\": "src/"
       }
   },
   "authors": [
@@ -24,10 +24,10 @@
   "extra": {
       "laravel": {
         "providers": [
-          "\\Converterlaravelpackage\\Imageconverter\\Providers\\ConverterProvider"
+          "\\Converterlaravelpackage\\imageconverterpackage\\Providers\\ConverterProvider"
         ],
         "aliases": {
-          "Imageconverter": "Converterlaravelpackage\\Imageconverter\\Converter"
+          "imageconverterpackage": "Converterlaravelpackage\\imageconverterpackage\\Converter"
         }
       }
     }

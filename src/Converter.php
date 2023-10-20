@@ -1,6 +1,6 @@
 <?php
 
-namespace Converterlaravelpackage\Imageconverter;
+namespace Converterlaravelpackage\imageconverterpackage;
 
 class Converter
 {

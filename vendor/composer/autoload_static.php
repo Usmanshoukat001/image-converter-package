@@ -64,7 +64,7 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
         ),
         'C' => 
         array (
-            'Converterlaravelpackage\\Imageconverter\\' => 39,
+            'Converterlaravelpackage\\imageconverterpackage\\' => 39,
         ),
         'A' => 
         array (
@@ -170,7 +170,7 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
         array (
             0 => __DIR__ . '/..' . '/evenement/evenement/src',
         ),
-        'Converterlaravelpackage\\Imageconverter\\' => 
+        'Converterlaravelpackage\\imageconverterpackage\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -187,7 +187,7 @@ class ComposerStaticInit42c889eae84baec37ee301b10271cbd2
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
-        '©' => __DIR__ . '/..' . '/symfony/cache/Traits/ValueWrapper.php',
+        'ï¿½' => __DIR__ . '/..' . '/symfony/cache/Traits/ValueWrapper.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

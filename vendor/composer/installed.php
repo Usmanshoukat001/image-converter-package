@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'name' => 'converterlaravelpackage/imageconverter',
+        'name' => 'converterlaravelpackage/imageconverterpackage',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
         'reference' => '7cfcecb45910664672c62fbb22af1c522e42f230',
@@ -10,7 +10,7 @@
         'dev' => true,
     ),
     'versions' => array(
-        'converterlaravelpackage/imageconverter' => array(
+        'converterlaravelpackage/imageconverterpackage' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
             'reference' => '7cfcecb45910664672c62fbb22af1c522e42f230',
