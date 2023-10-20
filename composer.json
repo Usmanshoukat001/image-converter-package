@@ -24,7 +24,7 @@
   "extra": {
       "laravel": {
         "providers": [
-          "\\Converterlaravelpackage\\imageconverterpackage\\Providers\\ConverterProvider"
+          "\\Converterlaravelpackage\\imageconverterpackage\\src\\Providers\\ConverterProvider"
         ],
         "aliases": {
           "imageconverterpackage": "Converterlaravelpackage\\imageconverterpackage\\Converter"
